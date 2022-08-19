@@ -1,0 +1,9 @@
+GET https://api.fantasynerds.com/v1/nfl/adp?apikey=9QMXR7U9ZUG3TS47S8Z4&teams=&format=ppr HTTP/1.1
+
+### - BestBall
+
+GET https://api.fantasynerds.com/v1/nfl/bestball?apikey=TEST HTTP/1.1
+
+### - Draft Rankings
+
+GET https://api.fantasynerds.com/v1/nfl/draft-rankings?apikey=TEST&format=ppr HTTP/1.1
