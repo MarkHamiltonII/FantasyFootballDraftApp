@@ -40,3 +40,10 @@
 .table td {
   white-space: nowrap;
 }
+
+.btn-icon {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
