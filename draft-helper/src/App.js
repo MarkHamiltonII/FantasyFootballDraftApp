@@ -25,6 +25,15 @@ function App() {
     return ""
   }
 
+  function getGoingSoon(adp) {
+    if (adp - pick < 0) {
+      return 'should-have-gone'
+    }
+    if (adp - pick < 10) {
+      return 'going-soon'
+    }
+  }
+
   function handleRankingSelect(e) {
     e.preventDefault()
     switch (e.target.value) {
@@ -161,7 +170,7 @@ function App() {
             </thead>
             <tbody>
               {filteredData.map(player => (
-                <tr key={player.Rank} className={`${getGoodDeal(player.Rank, player.ADP)} ${(player.ADP - pick) < 10 ? 'going-soon' : ''}`}>
+                <tr key={player.Rank} className={`${getGoodDeal(player.Rank, player.ADP)} ${getGoingSoon(player.ADP)}`}>
                   <th scope="row">{player.Rank}</th>
                   <td>{player.Name}</td>
                   <td>{player.Team}</td>

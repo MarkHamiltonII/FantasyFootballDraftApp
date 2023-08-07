@@ -31,6 +31,9 @@
 .going-soon {
   border-left: 4px solid orange;
 }
+.should-have-gone {
+  border-left: 4px solid red;
+}
 
 .pick-container {
   display: flex;
