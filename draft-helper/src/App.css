@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.jumbotron-green {
+  background-color: green;
+  color: white;
+  font-weight: 900;
+}
+
+.status-box {
+  background-color: antiquewhite;
+}
+
+.pick-box {
+  border: 3px solid darkslategray;
+  border-radius: 16px;
+}
+
 .table-container {
   overflow: auto;
   height: 60vh;
@@ -20,4 +35,8 @@
 .pick-container {
   display: flex;
   justify-content: center;
+}
+
+.table td {
+  white-space: nowrap;
 }
