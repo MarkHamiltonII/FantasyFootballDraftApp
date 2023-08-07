@@ -1,0 +1,340 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  .App {
+    text-align: center;
+  }
+  
+  .counter-container{
+    position:absolute;
+    top: 0;
+  }
+  
+  .counter{
+    left: 0;
+    margin-left: 2%;
+  }
+  
+  .round-container{
+    right: 0;
+    margin-right: 2%;
+  }
+  
+  .counter-container button{
+    width:25%;
+    margin-left:4%;
+    margin-right: 4%;
+  }
+  
+  .workspace{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+  
+  .section-container {
+    margin-top:2%;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: fit-content;
+  }
+  
+  .section-container h2{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 2% 2% 2% 2%;
+  }
+  
+  .table-container{
+    margin-left:auto;
+    margin-right: auto;
+  }
+  
+  .table-header{
+    font-weight: bold;
+  }
+  
+  .rankings{
+    width: auto;
+  }
+  
+  .myteam{
+    width: auto;
+    height: fit-content;
+  }
+  
+  .button-row{
+    width: 10%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  
+  table{
+    border-collapse: collapse;
+  }
+  
+  .going-soon{
+    border: 2px solid gold;
+  }
+  
+  .should-have-gone{
+    border: 2px solid red;
+  }
+  
+  .good-deal{
+    background-color: lightgreen;
+  }
+  
+  .bad-deal{
+    background-color: lightpink;
+  }
+  </style>
+  <title>Fantasy Football Helper</title>
+</head>
+
+<body>
+  <div class="App">
+    <h2>Welcome to FF Helper</h2>
+    <p>Please upload your preffered rankings as a csv</p>
+    <form id="myForm" onsubmit="handleSubmit(event)">
+      <input type="file" id="csvFile" accept=".csv" />
+      <input type="submit" value="Submit" />
+    </form>
+    <div class='button-container'>
+      <button onclick="handleReset()">Reset</button>
+      <button onclick="handleUndo()">Undo</button>
+    </div>
+
+    <div class='counter-container counter'>
+      <h3>Pick Counter</h3>
+      <h2><span class="pick-counter"></span></h2>
+      <p><button onclick="plusPick()">+</button><button onclick="minusPick()">-</button></p>
+    </div>
+
+    <div class='counter-container round-container'>
+      <h3>Round Counter</h3>
+      <h2><span class="round-counter"></span></h2>
+      <p><button onclick="plusRound()">+</button><button onclick="minusRound()">-</button></p>
+    </div>
+
+
+    <div class='workspace'>
+
+      <div class='section-container'>
+        <h2>Rankings</h2>
+        <table class='table-container rankings'>
+          <thead class='table-header'>
+          </thead>
+          <tbody class="table-body">
+          </tbody>
+        </table>
+      </div>
+
+
+
+      <div class='section-container'>
+        <h2>My Team</h2>
+        <table class='table-container myteam'>
+          <thead>
+            <tr>
+              <td>Position</td>
+              <td>Player</td>
+            </tr>
+          </thead>
+          <tbody class="team-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+  <script>
+    const MY_EMPTY_TEAM = {
+    "QB": [],
+    "RB": [],
+    "WR": [],
+    "TE": [],
+    "DST": [],
+    "K": []
+}
+
+let csvFile = null
+let rankings = []
+let chosenPlayers = []
+let myTeam = MY_EMPTY_TEAM
+let pickCounter = 0
+let roundCounter = 0
+let lastIndex = []
+
+function csvToArray(str, delimiter = ", ") {
+
+    // slice from start of text to the first \n index
+    // use split to create an array from string by delimiter
+    const headers = str.slice(0, str.indexOf("\n") - 1).split(delimiter);
+
+    // slice from \n index + 1 to the end of the text
+    // use split to create an array of each csv value row
+    const rows = str.slice(str.indexOf("\n") + 1).split("\r\n");
+
+    // Map the rows
+    // split values from each row into an array
+    // use headers.reduce to create an object
+    // object properties derived from headers:values
+    // the object passed as an element of the array
+    const arr = rows.map(function (row) {
+        const values = row.split(delimiter);
+        const el = headers.reduce((object, header, index) => {
+            object[header] = values[index];
+            return object;
+        }, {});
+        return el;
+    });
+
+    // return the array
+    return arr;
+}
+
+document.getElementById('csvFile').addEventListener("change", (e) => csvFile = e.target.files[0])
+
+function handleSubmit(e) {
+    e.preventDefault();
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+        const text = e.target.result;
+        const data = csvToArray(text);
+        rankings = data;
+        renderRankings();
+        renderCounters();
+    };
+
+    reader.readAsText(csvFile);
+
+};
+
+const handleChosen = (index) => {
+    let currentChosen = rankings.splice(index, 1);
+    chosenPlayers.push(currentChosen);
+    lastIndex.push(index);
+    pickCounter += 1;
+    renderCounters();
+    renderRankings();
+}
+
+const handleAddToMyTeam = (index, Eligible_Position) => {
+    myTeam[Eligible_Position].push(rankings[index]);
+    roundCounter += 1;
+    renderMyTeam();
+    handleChosen(index);
+    renderCounters();
+}
+
+const handleReset = () => {
+    location.reload();
+}
+
+const handleUndo = () => {
+    let recentIndex = lastIndex.pop();
+    let lastChosen = chosenPlayers.pop();
+    rankings.splice(recentIndex, 0, lastChosen[0]);
+    pickCounter -= 1;
+    renderRankings();
+    renderCounters();
+}
+
+const plusPick = () => {
+    pickCounter += 1;
+    renderCounters();
+}
+
+const minusPick = () => {
+    pickCounter -= 1;
+    renderCounters();
+}
+const plusRound = () => {
+    roundCounter += 1;
+    renderCounters();
+}
+
+const minusRound = () => {
+    roundCounter -= 1;
+    renderCounters();
+}
+
+const renderRankings = () => {
+    const h = document.querySelector('.table-header');
+    let content = "<tr>";
+    Object.keys(rankings[0]).map((key, index) => {
+        content += `<td>${key}</td>`
+    })
+    content += "</tr>"
+    h.innerHTML = content;
+
+    let b = document.querySelector('.table-body');
+    let bodyContent = '';
+    for (i = 0; i < rankings.length; i++) {
+        if (rankings[0].ADP) {
+            let rowClass = '';
+            if (rankings[i]['ADP'] < pickCounter) {
+                rowClass = 'should-have-gone';
+            } else if (rankings[i]['ADP'] < pickCounter + 10) {
+                rowClass = 'going-soon'
+            } else if (rankings[i].Rank > rankings[i]['ADP']) {
+                rowClass = 'good-deal'
+            }
+            bodyContent += `<tr class="${rowClass}">`;
+            Object.keys(rankings[i]).map((key, index) => {
+                bodyContent += `<td>${rankings[i][key]}</td>`
+            })
+            bodyContent += `
+        <td><button onclick="handleChosen(${i})">Taken</button></td>
+        <td><button onclick="handleAddToMyTeam(${i}, '${rankings[i].Position}')">Mine!</button></td></tr>`;
+            b.innerHTML = bodyContent;
+        }
+    }
+}
+
+const renderMyTeam = () => {
+    const tb = document.querySelector('.team-body');
+    let content = '';
+
+    myTeam['QB'].map((p) => {
+        content += `<tr><td>${p.Position_Rank}</td><td>${p.Player}</td></tr>`
+    })
+    myTeam['RB'].map((p) => {
+        content += `<tr><td>${p.Position_Rank}</td><td>${p.Player}</td></tr>`
+    })
+    myTeam['WR'].map((p) => {
+        content += `<tr><td>${p.Position_Rank}</td><td>${p.Player}</td></tr>`
+    })
+    myTeam['TE'].map((p) => {
+        content += `<tr><td>${p.Position_Rank}</td><td>${p.Player}</td></tr>`
+    })
+    myTeam['K'].map((p) => {
+        content += `<tr><td>${p.Position_Rank}</td><td>${p.Player}</td></tr>`
+    })
+    myTeam['DST'].map((p) => {
+        content += `<tr><td>${p.Position_Rank}</td><td>${p.Player}</td></tr>`
+    })
+
+    tb.innerHTML = content;
+}
+
+const renderCounters = () => {
+    const pc = document.querySelector('.pick-counter');
+    const rc = document.querySelector('.round-counter');
+    pc.innerHTML = ` ${pickCounter} `;
+    rc.innerHTML = ` ${roundCounter} `;
+}
+  </script>
+</body>
+
+</html>
