@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.table-container {
+  overflow: auto;
+  height: 60vh;
+}
+
+.table-container thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.going-soon {
+  border-left: 4px solid orange;
+}
+
+.pick-container {
+  display: flex;
+  justify-content: center;
+}
