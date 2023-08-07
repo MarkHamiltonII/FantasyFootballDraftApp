@@ -34,6 +34,9 @@
 .should-have-gone {
   border-left: 4px solid red;
 }
+.we-chillin {
+  border-left: 4px solid green
+}
 
 .pick-container {
   display: flex;

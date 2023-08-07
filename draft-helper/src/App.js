@@ -32,6 +32,9 @@ function App() {
     if (adp - pick < 10) {
       return 'going-soon'
     }
+    if (adp - pick > 20) {
+      return 'we-chillin'
+    }
   }
 
   function handleRankingSelect(e) {
