@@ -46,7 +46,7 @@ for idx, link in enumerate(name_links):
     }
     player_ranks.append(player)
 
-with open("data/tristan_ranks.json", "w") as outfile:
+with open("draft-helper/src/data/tristan_ranks.json", "w") as outfile:
     outfile.write(json.dumps(player_ranks, indent=4))
 
 
@@ -82,5 +82,5 @@ for idx, link in enumerate(name_links):
     }
     player_ranks.append(player)
 
-with open("data/field_ranks.json", "w") as outfile:
+with open("draft-helper/src/data/field_ranks.json", "w") as outfile:
     outfile.write(json.dumps(player_ranks, indent=4))

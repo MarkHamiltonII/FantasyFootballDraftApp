@@ -40,14 +40,23 @@ for idx, player in enumerate(players):
     pos_rank = re.findall('[0-9]+', rank)[0]
     pos = re.findall('[A-Z]+', rank)[0]
 
+    for _ in range(6):
+        start = html.find("<td>",start)+4
+    current_index = start
+    adp = ''
+    while html[current_index] != '<':
+        adp += html[current_index]
+        current_index+=1
+    print(name, adp)
     player_data = {
         "Rank": idx+1,
         "Name": name,
         "Team": team,
         "Position": pos,
-        "Position Rank": int(pos_rank)
+        "Position Rank": int(pos_rank),
+        "ADP": float(adp)
     }
     player_ranks.append(player_data)
 
-with open("data/adp.json", "w") as outfile:
+with open("draft-helper/src/data/adp.json", "w") as outfile:
     outfile.write(json.dumps(player_ranks, indent=4))
