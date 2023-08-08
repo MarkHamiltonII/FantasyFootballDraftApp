@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { FaUserPlus, FaTrashAlt } from 'react-icons/fa'
+import { FaUserPlus, FaUserMinus } from 'react-icons/fa'
 // import adp from './data/adp.json'
 import field_rank from './data/field_ranks.json'
 import tristan_rank from './data/tristan_ranks.json'
@@ -14,6 +14,7 @@ function App() {
   const [filteredData, setFilteredData] = useState(ranking)
   const [filterName, setFilterName] = useState('')
   const [sortPosition, setSortPosition] = useState('All')
+  const [selectedPlayers, setSelectedPlayers] = useState([])
 
   function getGoodDeal(rank, adp) {
     if ((rank - adp) < -10) {
@@ -56,10 +57,14 @@ function App() {
   function handleRemovePlayer(player) {
     let idx = ranking.findIndex((p) => player === p)
     let new_ranking = [...ranking]
-    new_ranking.splice(idx, 1)
+    let new_selected = [...selectedPlayers]
+    let new_player = new_ranking.splice(idx, 1)
+    new_selected.push(new_player[0])
+    console.log(new_selected)
     setPick(pick + 1)
     setRanking(new_ranking)
     setFilteredData(new_ranking)
+    setSelectedPlayers(new_selected)
     setFilterName('')
     setSortPosition('All')
   }
@@ -68,12 +73,17 @@ function App() {
     let idx = ranking.findIndex((p) => p === player)
     let new_ranking = [...ranking]
     let new_myRanking = [...myRanking]
+    let new_selected = [...selectedPlayers]
     let new_player = new_ranking.splice(idx, 1)
     new_myRanking.push(new_player[0])
+    new_selected.push(new_player[0])
+    console.log(new_myRanking)
+    console.log(new_selected)
     setPick(pick + 1)
     setRanking(new_ranking)
     setMyRanking(new_myRanking)
     setFilteredData(new_ranking)
+    setSelectedPlayers(new_selected)
     setFilterName('')
     setSortPosition('All')
   }
@@ -109,15 +119,38 @@ function App() {
     setFilteredData(newFilter)
   }
 
+  function handleUndo(){
+    if (selectedPlayers.length < 1) {
+      return
+    }
+    let new_selected = [...selectedPlayers]
+    let new_ranking = [...ranking]
+    let new_myRanking = [...myRanking]
+    let player = new_selected.pop()
+    new_ranking.push(player)
+    new_ranking.sort((player1, player2) => player1.Rank-player2.Rank)
+    if (new_myRanking.length > 0) {
+      new_myRanking.pop()
+    }
+    console.log(new_myRanking)
+    setMyRanking(new_myRanking)
+    setRanking(new_ranking)
+    setFilteredData(new_ranking)
+    setSelectedPlayers(new_selected)
+    setFilterName('')
+    setSortPosition('All')
+    setPick(pick-1)
+  }
+
 
   return (
     <div className="App">
       <div className='jumbotron jumbotron-green mb-0'>
-        <h1 className='display-4'>Fantasy Football Draft Helper</h1>
+        <h1 className='display-5'>Fantasy Football Draft Helper</h1>
       </div>
-      <div className='status-box w-100 d-flex mb-4 py-4 justify-content-center'>
+      <div className='status-box w-100 d-flex py-4 justify-content-center'>
         <div className='pick-box container d-flex flex-column bg-light w-auto pb-2'>
-          <h3 className='font-weight-bold'>Pick #</h3>
+          <h4 className='font-weight-bold'>Pick #</h4>
           <div className='pick-container d-flex align-items-center'>
             <div className='d-flex flex-column justify-content-evenly'>
               <button className='btn btn-sm btn-secondary mb-2' onClick={() => setPick(pick + 1)}>+</button>
@@ -146,7 +179,7 @@ function App() {
             </select>
           </div>
         </div>
-        {pick < 2 && <div className='rank-selection container d-flex flex-column justify-content-center align-items-center w-auto'>
+        {pick < 2 ? <div className='rank-selection container d-flex flex-column justify-content-center align-items-center w-auto'>
           <label className='font-weight-bold'>
             Who's ranking would you like to use?
           </label>
@@ -154,9 +187,12 @@ function App() {
             <option value="Field">Field Yates (ESPN)</option>
             <option value="Tristan">Tristan H. Cockroft (ESPN)</option>
           </select>
-        </div>}
+        </div> : 
+        <div className='undo-button container d-flex flex-column justify-content-center align-items-center w-auto'>
+         <button className='btn btn-dark' onClick={() => handleUndo()}>Undo</button>
+         </div>}
       </div>
-      <div className='d-flex w-100'>
+      <div className='d-flex w-100 content-box pt-4 mb-0'>
         <div className='table-container container'>
           <table className="table table-sm table-hover table-fixed vh-60">
             <thead className="thead-dark table-header">
@@ -167,7 +203,6 @@ function App() {
                 <th scope="col">Position</th>
                 <th scope="col">Position Rank</th>
                 <th scope="col">ADP</th>
-                <th scope="col"></th>
                 <th scope="col"></th>
               </tr>
             </thead>
@@ -180,12 +215,14 @@ function App() {
                   <td>{player.Position}</td>
                   <td>{player['Position Rank']}</td>
                   <td>{player.ADP}</td>
-                  <td><button className='btn btn-sm btn-danger p-2 d-flex align-items-center justify-content-center' onClick={() => { handleRemovePlayer(player) }}>
-                    <FaTrashAlt></FaTrashAlt>
-                  </button></td>
-                  <td><button className='btn btn-sm btn-success p-2 d-flex align-items-center justify-content-center' onClick={() => { handleAddPlayer(player) }}>
-                    <FaUserPlus className='mr-1'></FaUserPlus>
-                  </button></td>
+                  <td className='d-flex'>
+                    <button className='btn btn-sm btn-danger p-2 d-flex align-items-center justify-content-center mr-1' onClick={() => { handleRemovePlayer(player) }}>
+                      <FaUserMinus></FaUserMinus>
+                    </button>
+                    <button className='btn btn-sm btn-success p-2 d-flex align-items-center justify-content-center' onClick={() => { handleAddPlayer(player) }}>
+                      <FaUserPlus></FaUserPlus>
+                    </button>
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -193,7 +230,7 @@ function App() {
         </div>
         {myRanking.length > 0 && <div className='container w-auto'>
           <h2 className='font-weight-bold'>My Team</h2>
-          <table className="table table-sm table-hover ">
+          <table className="table-container table table-sm table-hover ">
             <thead className="thead-dark table-header">
               <tr>
                 <th scope="col">Name</th>

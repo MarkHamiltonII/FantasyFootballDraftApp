@@ -17,15 +17,23 @@
   border-radius: 16px;
 }
 
+.content-box {
+  background-color: lightgray;
+}
+
 .table-container {
   overflow: auto;
-  height: 60vh;
+  max-height: 60vh;
 }
 
 .table-container thead th {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.table-container tr {
+  background-color: whitesmoke;
 }
 
 .going-soon {
