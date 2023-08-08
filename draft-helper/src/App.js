@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { FaUserPlus, FaUserMinus } from 'react-icons/fa'
 // import adp from './data/adp.json'
@@ -11,10 +11,65 @@ function App() {
   const [ranking, setRanking] = useState(field_rank)
   const [pick, setPick] = useState(1)
   const [myRanking, setMyRanking] = useState([])
-  const [filteredData, setFilteredData] = useState(ranking)
+  const [filteredData, setFilteredData] = useState(field_rank)
   const [filterName, setFilterName] = useState('')
   const [sortPosition, setSortPosition] = useState('All')
   const [selectedPlayers, setSelectedPlayers] = useState([])
+  const [loadComplete, setLoadComplete] = useState(false)
+
+  useEffect(() => {
+    loadData()
+    // eslint-disable-next-line
+  }, [])
+
+  async function loadData() {
+    try {
+      if (loadComplete) {
+        throw new Error('Load is completed')
+      }
+      console.log('Loading...')
+      const storedRanking = await JSON.parse(sessionStorage.getItem("ranking"))
+      const storedPick = await JSON.parse(sessionStorage.getItem("pick"))
+      const storedMyRanking = await JSON.parse(sessionStorage.getItem("myRanking"))
+      const storedSelectedPlayers = await JSON.parse(sessionStorage.getItem("selectedPlayers"))
+      if (storedRanking) {
+        console.log(storedRanking[0])
+        setRanking(storedRanking)
+        setFilteredData(storedRanking)
+      }
+      if (storedPick) {
+        setPick(storedPick)
+      }
+      if (storedMyRanking) {
+        setMyRanking(storedMyRanking)
+      }
+      if (storedSelectedPlayers) {
+        setSelectedPlayers(storedSelectedPlayers)
+      }
+      if (!storedRanking) {
+        setRanking(field_rank)
+        setFilteredData(field_rank)
+        console.log('No stored ranking')
+      }
+      setLoadComplete(true)
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  useEffect(() => {
+    if (loadComplete) {
+      saveData()
+    }
+    // eslint-disable-next-line
+  }, [ranking, myRanking, pick, selectedPlayers])
+
+  function saveData() {
+    sessionStorage.setItem("ranking", JSON.stringify(ranking))
+    sessionStorage.setItem("myRanking", JSON.stringify(myRanking))
+    sessionStorage.setItem("pick", pick)
+    sessionStorage.setItem("selectedPlayers", JSON.stringify(selectedPlayers))
+  }
 
   function getGoodDeal(rank, adp) {
     if ((rank - adp) < -10) {
@@ -54,13 +109,12 @@ function App() {
     }
   }
 
-  function handleRemovePlayer(player) {
+  async function handleRemovePlayer(player) {
     let idx = ranking.findIndex((p) => player === p)
     let new_ranking = [...ranking]
     let new_selected = [...selectedPlayers]
     let new_player = new_ranking.splice(idx, 1)
     new_selected.push(new_player[0])
-    console.log(new_selected)
     setPick(pick + 1)
     setRanking(new_ranking)
     setFilteredData(new_ranking)
@@ -69,7 +123,7 @@ function App() {
     setSortPosition('All')
   }
 
-  function handleAddPlayer(player) {
+  async function handleAddPlayer(player) {
     let idx = ranking.findIndex((p) => p === player)
     let new_ranking = [...ranking]
     let new_myRanking = [...myRanking]
@@ -77,8 +131,6 @@ function App() {
     let new_player = new_ranking.splice(idx, 1)
     new_myRanking.push(new_player[0])
     new_selected.push(new_player[0])
-    console.log(new_myRanking)
-    console.log(new_selected)
     setPick(pick + 1)
     setRanking(new_ranking)
     setMyRanking(new_myRanking)
@@ -119,7 +171,7 @@ function App() {
     setFilteredData(newFilter)
   }
 
-  function handleUndo(){
+  async function handleUndo() {
     if (selectedPlayers.length < 1) {
       return
     }
@@ -128,20 +180,24 @@ function App() {
     let new_myRanking = [...myRanking]
     let player = new_selected.pop()
     new_ranking.push(player)
-    new_ranking.sort((player1, player2) => player1.Rank-player2.Rank)
-    if (new_myRanking.length > 0) {
+    new_ranking.sort((player1, player2) => player1.Rank - player2.Rank)
+    let own_player = false
+    for (let p = 0; p < new_myRanking.length; p++) {
+      if (new_myRanking[p].Name === player.Name) {
+        own_player = true
+      }
+    }
+    if (own_player) {
       new_myRanking.pop()
     }
-    console.log(new_myRanking)
     setMyRanking(new_myRanking)
     setRanking(new_ranking)
     setFilteredData(new_ranking)
     setSelectedPlayers(new_selected)
     setFilterName('')
     setSortPosition('All')
-    setPick(pick-1)
+    setPick(pick - 1)
   }
-
 
   return (
     <div className="App">
@@ -187,13 +243,13 @@ function App() {
             <option value="Field">Field Yates (ESPN)</option>
             <option value="Tristan">Tristan H. Cockroft (ESPN)</option>
           </select>
-        </div> : 
-        <div className='undo-button container d-flex flex-column justify-content-center align-items-center w-auto'>
-         <button className='btn btn-dark' onClick={() => handleUndo()}>Undo</button>
-         </div>}
+        </div> :
+          <div className='undo-button container d-flex flex-column justify-content-center align-items-center w-auto'>
+            <button className='btn btn-dark' onClick={() => handleUndo()}>Undo</button>
+          </div>}
       </div>
       <div className='d-flex w-100 content-box pt-4 mb-0'>
-        <div className='table-container container'>
+        {filteredData && <div className='table-container container'>
           <table className="table table-sm table-hover table-fixed vh-60">
             <thead className="thead-dark table-header">
               <tr>
@@ -227,7 +283,7 @@ function App() {
               ))}
             </tbody>
           </table>
-        </div>
+        </div>}
         {myRanking.length > 0 && <div className='container w-auto'>
           <h2 className='font-weight-bold'>My Team</h2>
           <table className="table-container table table-sm table-hover ">
