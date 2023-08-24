@@ -9,11 +9,11 @@
     },
     {
         "Rank": 2,
-        "Name": "Christian McCaffrey",
-        "Team": "49ers",
-        "Position": "RB",
-        "Position Rank": 1,
-        "ADP": 2.3
+        "Name": "Ja'Marr Chase",
+        "Team": "Bengals",
+        "Position": "WR",
+        "Position Rank": 2,
+        "ADP": 3.0
     },
     {
         "Rank": 3,
@@ -21,42 +21,34 @@
         "Team": "Chargers",
         "Position": "RB",
         "Position Rank": 2,
-        "ADP": 3.3
+        "ADP": 3.8
     },
     {
         "Rank": 4,
-        "Name": "Ja'Marr Chase",
-        "Team": "Bengals",
-        "Position": "WR",
-        "Position Rank": 2,
-        "ADP": 3.5
-    },
-    {
-        "Rank": 5,
         "Name": "Saquon Barkley",
         "Team": "Giants",
         "Position": "RB",
         "Position Rank": 3,
-        "ADP": 8.0
+        "ADP": 7.8
+    },
+    {
+        "Rank": 5,
+        "Name": "Cooper Kupp",
+        "Team": "Rams",
+        "Position": "WR",
+        "Position Rank": 3,
+        "ADP": 6.5
     },
     {
         "Rank": 6,
-        "Name": "Jonathan Taylor",
-        "Team": "Colts",
-        "Position": "RB",
-        "Position Rank": 4,
-        "ADP": 14.5
-    },
-    {
-        "Rank": 7,
         "Name": "Bijan Robinson",
         "Team": "Falcons",
         "Position": "RB",
-        "Position Rank": 5,
+        "Position Rank": 4,
         "ADP": 8.5
     },
     {
-        "Rank": 8,
+        "Rank": 7,
         "Name": "Travis Kelce",
         "Team": "Chiefs",
         "Position": "TE",
@@ -64,36 +56,44 @@
         "ADP": 6.0
     },
     {
-        "Rank": 9,
-        "Name": "Cooper Kupp",
-        "Team": "Rams",
-        "Position": "WR",
-        "Position Rank": 3,
-        "ADP": 5.8
-    },
-    {
-        "Rank": 10,
-        "Name": "Josh Jacobs",
-        "Team": "Raiders",
-        "Position": "RB",
-        "Position Rank": 6,
-        "ADP": 18.0
-    },
-    {
-        "Rank": 11,
-        "Name": "Derrick Henry",
-        "Team": "Titans",
-        "Position": "RB",
-        "Position Rank": 7,
-        "ADP": 16.5
-    },
-    {
-        "Rank": 12,
+        "Rank": 8,
         "Name": "Tyreek Hill",
         "Team": "Dolphins",
         "Position": "WR",
         "Position Rank": 4,
-        "ADP": 7.0
+        "ADP": 6.5
+    },
+    {
+        "Rank": 9,
+        "Name": "Jonathan Taylor",
+        "Team": "Colts",
+        "Position": "RB",
+        "Position Rank": 5,
+        "ADP": 20.0
+    },
+    {
+        "Rank": 10,
+        "Name": "Derrick Henry",
+        "Team": "Titans",
+        "Position": "RB",
+        "Position Rank": 6,
+        "ADP": 15.8
+    },
+    {
+        "Rank": 11,
+        "Name": "Tony Pollard",
+        "Team": "Cowboys",
+        "Position": "RB",
+        "Position Rank": 7,
+        "ADP": 17.0
+    },
+    {
+        "Rank": 12,
+        "Name": "Josh Jacobs",
+        "Team": "Raiders",
+        "Position": "RB",
+        "Position Rank": 8,
+        "ADP": 19.8
     },
     {
         "Rank": 13,
@@ -101,66 +101,50 @@
         "Team": "Bills",
         "Position": "WR",
         "Position Rank": 5,
-        "ADP": 10.5
+        "ADP": 10.8
     },
     {
         "Rank": 14,
-        "Name": "Tony Pollard",
-        "Team": "Cowboys",
-        "Position": "RB",
-        "Position Rank": 8,
-        "ADP": 19.3
-    },
-    {
-        "Rank": 15,
         "Name": "Nick Chubb",
         "Team": "Browns",
         "Position": "RB",
         "Position Rank": 9,
-        "ADP": 14.5
+        "ADP": 13.8
     },
     {
-        "Rank": 16,
+        "Rank": 15,
         "Name": "Davante Adams",
         "Team": "Raiders",
         "Position": "WR",
         "Position Rank": 6,
-        "ADP": 13.8
+        "ADP": 13.5
     },
     {
-        "Rank": 17,
+        "Rank": 16,
         "Name": "Travis Etienne Jr.",
         "Team": "Jaguars",
         "Position": "RB",
         "Position Rank": 10,
-        "ADP": 30.0
+        "ADP": 31.0
     },
     {
-        "Rank": 18,
+        "Rank": 17,
         "Name": "CeeDee Lamb",
         "Team": "Cowboys",
         "Position": "WR",
         "Position Rank": 7,
-        "ADP": 12.8
+        "ADP": 13.3
     },
     {
-        "Rank": 19,
+        "Rank": 18,
         "Name": "Garrett Wilson",
         "Team": "Jets",
         "Position": "WR",
         "Position Rank": 8,
-        "ADP": 19.3
+        "ADP": 18.0
     },
     {
-        "Rank": 20,
-        "Name": "Rhamondre Stevenson",
-        "Team": "Patriots",
-        "Position": "RB",
-        "Position Rank": 11,
-        "ADP": 28.3
-    },
-    {
-        "Rank": 21,
+        "Rank": 19,
         "Name": "Mark Andrews",
         "Team": "Ravens",
         "Position": "TE",
@@ -168,567 +152,527 @@
         "ADP": 28.0
     },
     {
-        "Rank": 22,
+        "Rank": 20,
         "Name": "Joe Mixon",
         "Team": "Bengals",
         "Position": "RB",
-        "Position Rank": 12,
-        "ADP": 35.8
+        "Position Rank": 11,
+        "ADP": 34.5
     },
     {
-        "Rank": 23,
-        "Name": "Breece Hall",
-        "Team": "Jets",
-        "Position": "RB",
-        "Position Rank": 13,
-        "ADP": 29.8
-    },
-    {
-        "Rank": 24,
-        "Name": "Amon-Ra St. Brown",
-        "Team": "Lions",
+        "Rank": 21,
+        "Name": "A.J. Brown",
+        "Team": "Eagles",
         "Position": "WR",
         "Position Rank": 9,
-        "ADP": 19.0
+        "ADP": 14.3
     },
     {
-        "Rank": 25,
+        "Rank": 22,
         "Name": "Aaron Jones",
         "Team": "Packers",
         "Position": "RB",
-        "Position Rank": 14,
-        "ADP": 38.8
+        "Position Rank": 12,
+        "ADP": 38.0
     },
     {
-        "Rank": 26,
+        "Rank": 23,
         "Name": "Najee Harris",
         "Team": "Steelers",
         "Position": "RB",
-        "Position Rank": 15,
-        "ADP": 29.8
+        "Position Rank": 13,
+        "ADP": 28.5
     },
     {
-        "Rank": 27,
+        "Rank": 24,
+        "Name": "Rhamondre Stevenson",
+        "Team": "Patriots",
+        "Position": "RB",
+        "Position Rank": 14,
+        "ADP": 31.3
+    },
+    {
+        "Rank": 25,
         "Name": "T.J. Hockenson",
         "Team": "Vikings",
         "Position": "TE",
         "Position Rank": 3,
-        "ADP": 44.3
+        "ADP": 44.0
+    },
+    {
+        "Rank": 26,
+        "Name": "Amon-Ra St. Brown",
+        "Team": "Lions",
+        "Position": "WR",
+        "Position Rank": 10,
+        "ADP": 18.8
+    },
+    {
+        "Rank": 27,
+        "Name": "Jahmyr Gibbs",
+        "Team": "Lions",
+        "Position": "RB",
+        "Position Rank": 15,
+        "ADP": 35.0
     },
     {
         "Rank": 28,
-        "Name": "A.J. Brown",
-        "Team": "Eagles",
-        "Position": "WR",
-        "Position Rank": 10,
-        "ADP": 14.5
-    },
-    {
-        "Rank": 29,
-        "Name": "Kenneth Walker III",
-        "Team": "Seahawks",
-        "Position": "RB",
-        "Position Rank": 16,
-        "ADP": 44.3
-    },
-    {
-        "Rank": 30,
         "Name": "Jaylen Waddle",
         "Team": "Dolphins",
         "Position": "WR",
         "Position Rank": 11,
-        "ADP": 23.8
+        "ADP": 24.0
     },
     {
-        "Rank": 31,
+        "Rank": 29,
         "Name": "Patrick Mahomes",
         "Team": "Chiefs",
         "Position": "QB",
         "Position Rank": 1,
-        "ADP": 15.5
+        "ADP": 15.3
     },
     {
-        "Rank": 32,
-        "Name": "Jahmyr Gibbs",
-        "Team": "Lions",
+        "Rank": 30,
+        "Name": "Kenneth Walker III",
+        "Team": "Seahawks",
         "Position": "RB",
-        "Position Rank": 17,
-        "ADP": 35.8
+        "Position Rank": 16,
+        "ADP": 44.8
     },
     {
-        "Rank": 33,
+        "Rank": 31,
         "Name": "Tee Higgins",
         "Team": "Bengals",
         "Position": "WR",
         "Position Rank": 12,
-        "ADP": 30.5
+        "ADP": 29.8
     },
     {
-        "Rank": 34,
+        "Rank": 32,
         "Name": "Dameon Pierce",
         "Team": "Texans",
         "Position": "RB",
-        "Position Rank": 18,
-        "ADP": 48.0
+        "Position Rank": 17,
+        "ADP": 48.5
     },
     {
-        "Rank": 35,
+        "Rank": 33,
         "Name": "DeVonta Smith",
         "Team": "Eagles",
         "Position": "WR",
         "Position Rank": 13,
-        "ADP": 28.0
+        "ADP": 27.3
     },
     {
-        "Rank": 36,
+        "Rank": 34,
+        "Name": "James Conner",
+        "Team": "Cardinals",
+        "Position": "RB",
+        "Position Rank": 18,
+        "ADP": 65.3
+    },
+    {
+        "Rank": 35,
         "Name": "DK Metcalf",
         "Team": "Seahawks",
         "Position": "WR",
         "Position Rank": 14,
-        "ADP": 32.0
+        "ADP": 31.5
     },
     {
-        "Rank": 37,
+        "Rank": 36,
         "Name": "Rachaad White",
         "Team": "Buccaneers",
         "Position": "RB",
         "Position Rank": 19,
-        "ADP": 64.3
+        "ADP": 66.0
     },
     {
-        "Rank": 38,
+        "Rank": 37,
         "Name": "Josh Allen",
         "Team": "Bills",
         "Position": "QB",
         "Position Rank": 2,
-        "ADP": 20.5
+        "ADP": 20.8
     },
     {
-        "Rank": 39,
+        "Rank": 38,
         "Name": "Chris Olave",
         "Team": "Saints",
         "Position": "WR",
         "Position Rank": 15,
-        "ADP": 31.0
+        "ADP": 27.3
     },
     {
-        "Rank": 40,
+        "Rank": 39,
         "Name": "Keenan Allen",
         "Team": "Chargers",
         "Position": "WR",
         "Position Rank": 16,
-        "ADP": 45.3
+        "ADP": 44.3
     },
     {
-        "Rank": 41,
+        "Rank": 40,
         "Name": "Deebo Samuel",
         "Team": "49ers",
         "Position": "WR",
         "Position Rank": 17,
-        "ADP": 38.3
+        "ADP": 37.8
+    },
+    {
+        "Rank": 41,
+        "Name": "Calvin Ridley",
+        "Team": "Jaguars",
+        "Position": "WR",
+        "Position Rank": 18,
+        "ADP": 36.5
     },
     {
         "Rank": 42,
-        "Name": "Jalen Hurts",
-        "Team": "Eagles",
-        "Position": "QB",
-        "Position Rank": 3,
-        "ADP": 24.0
+        "Name": "Darren Waller",
+        "Team": "Giants",
+        "Position": "TE",
+        "Position Rank": 4,
+        "ADP": 53.8
     },
     {
         "Rank": 43,
         "Name": "Amari Cooper",
         "Team": "Browns",
         "Position": "WR",
-        "Position Rank": 18,
+        "Position Rank": 19,
         "ADP": 43.0
     },
     {
         "Rank": 44,
-        "Name": "Darren Waller",
-        "Team": "Giants",
-        "Position": "TE",
-        "Position Rank": 4,
-        "ADP": 57.5
+        "Name": "Breece Hall",
+        "Team": "Jets",
+        "Position": "RB",
+        "Position Rank": 20,
+        "ADP": 41.3
     },
     {
         "Rank": 45,
-        "Name": "DeAndre Hopkins",
-        "Team": "Titans",
+        "Name": "Chris Godwin",
+        "Team": "Buccaneers",
         "Position": "WR",
-        "Position Rank": 19,
-        "ADP": 50.8
+        "Position Rank": 20,
+        "ADP": 68.8
     },
     {
         "Rank": 46,
-        "Name": "Miles Sanders",
-        "Team": "Panthers",
-        "Position": "RB",
-        "Position Rank": 20,
-        "ADP": 47.5
-    },
-    {
-        "Rank": 47,
-        "Name": "Calvin Ridley",
-        "Team": "Jaguars",
-        "Position": "WR",
-        "Position Rank": 20,
-        "ADP": 40.8
-    },
-    {
-        "Rank": 48,
         "Name": "Kyle Pitts",
         "Team": "Falcons",
         "Position": "TE",
         "Position Rank": 5,
-        "ADP": 62.0
+        "ADP": 61.8
     },
     {
-        "Rank": 49,
-        "Name": "Chris Godwin",
-        "Team": "Buccaneers",
+        "Rank": 47,
+        "Name": "DeAndre Hopkins",
+        "Team": "Titans",
         "Position": "WR",
         "Position Rank": 21,
-        "ADP": 67.0
+        "ADP": 50.0
     },
     {
-        "Rank": 50,
-        "Name": "DJ Moore",
-        "Team": "Bears",
+        "Rank": 48,
+        "Name": "Jerry Jeudy",
+        "Team": "Broncos",
         "Position": "WR",
         "Position Rank": 22,
         "ADP": 53.5
     },
     {
-        "Rank": 51,
-        "Name": "James Conner",
-        "Team": "Cardinals",
+        "Rank": 49,
+        "Name": "Miles Sanders",
+        "Team": "Panthers",
         "Position": "RB",
         "Position Rank": 21,
-        "ADP": 63.5
+        "ADP": 50.0
     },
     {
-        "Rank": 52,
+        "Rank": 50,
         "Name": "Alexander Mattison",
         "Team": "Vikings",
         "Position": "RB",
         "Position Rank": 22,
-        "ADP": 67.3
+        "ADP": 66.3
     },
     {
-        "Rank": 53,
-        "Name": "Jerry Jeudy",
-        "Team": "Broncos",
+        "Rank": 51,
+        "Name": "DJ Moore",
+        "Team": "Bears",
         "Position": "WR",
         "Position Rank": 23,
-        "ADP": 56.8
+        "ADP": 51.3
     },
     {
-        "Rank": 54,
+        "Rank": 52,
         "Name": "Cam Akers",
         "Team": "Rams",
         "Position": "RB",
         "Position Rank": 23,
-        "ADP": 62.3
+        "ADP": 64.5
+    },
+    {
+        "Rank": 53,
+        "Name": "Drake London",
+        "Team": "Falcons",
+        "Position": "WR",
+        "Position Rank": 24,
+        "ADP": 68.3
+    },
+    {
+        "Rank": 54,
+        "Name": "Lamar Jackson",
+        "Team": "Ravens",
+        "Position": "QB",
+        "Position Rank": 4,
+        "ADP": 35.3
     },
     {
         "Rank": 55,
         "Name": "Christian Watson",
         "Team": "Packers",
         "Position": "WR",
-        "Position Rank": 24,
-        "ADP": 57.3
+        "Position Rank": 25,
+        "ADP": 56.5
     },
     {
         "Rank": 56,
-        "Name": "Lamar Jackson",
-        "Team": "Ravens",
-        "Position": "QB",
-        "Position Rank": 4,
-        "ADP": 36.0
-    },
-    {
-        "Rank": 57,
-        "Name": "Drake London",
-        "Team": "Falcons",
-        "Position": "WR",
-        "Position Rank": 25,
-        "ADP": 68.0
-    },
-    {
-        "Rank": 58,
         "Name": "George Kittle",
         "Team": "49ers",
         "Position": "TE",
         "Position Rank": 6,
-        "ADP": 48.0
+        "ADP": 49.5
     },
     {
-        "Rank": 59,
-        "Name": "Joe Burrow",
-        "Team": "Bengals",
-        "Position": "QB",
-        "Position Rank": 5,
-        "ADP": 36.3
-    },
-    {
-        "Rank": 60,
-        "Name": "Javonte Williams",
-        "Team": "Broncos",
-        "Position": "RB",
-        "Position Rank": 24,
-        "ADP": 75.8
-    },
-    {
-        "Rank": 61,
+        "Rank": 57,
         "Name": "J.K. Dobbins",
         "Team": "Ravens",
         "Position": "RB",
-        "Position Rank": 25,
-        "ADP": 66.8
+        "Position Rank": 24,
+        "ADP": 65.0
     },
     {
-        "Rank": 62,
-        "Name": "Isiah Pacheco",
-        "Team": "Chiefs",
+        "Rank": 58,
+        "Name": "Alvin Kamara",
+        "Team": "Saints",
+        "Position": "RB",
+        "Position Rank": 25,
+        "ADP": 62.0
+    },
+    {
+        "Rank": 59,
+        "Name": "Javonte Williams",
+        "Team": "Broncos",
         "Position": "RB",
         "Position Rank": 26,
-        "ADP": 72.0
+        "ADP": 72.5
     },
     {
-        "Rank": 63,
+        "Rank": 60,
         "Name": "Dallas Goedert",
         "Team": "Eagles",
         "Position": "TE",
         "Position Rank": 7,
-        "ADP": 65.0
-    },
-    {
-        "Rank": 64,
-        "Name": "D'Andre Swift",
-        "Team": "Eagles",
-        "Position": "RB",
-        "Position Rank": 27,
-        "ADP": 69.0
-    },
-    {
-        "Rank": 65,
-        "Name": "Terry McLaurin",
-        "Team": "Commanders",
-        "Position": "WR",
-        "Position Rank": 26,
-        "ADP": 50.0
-    },
-    {
-        "Rank": 66,
-        "Name": "Justin Fields",
-        "Team": "Bears",
-        "Position": "QB",
-        "Position Rank": 6,
-        "ADP": 46.3
-    },
-    {
-        "Rank": 67,
-        "Name": "Diontae Johnson",
-        "Team": "Steelers",
-        "Position": "WR",
-        "Position Rank": 27,
-        "ADP": 77.8
-    },
-    {
-        "Rank": 68,
-        "Name": "Michael Pittman Jr.",
-        "Team": "Colts",
-        "Position": "WR",
-        "Position Rank": 28,
-        "ADP": 79.8
-    },
-    {
-        "Rank": 69,
-        "Name": "David Montgomery",
-        "Team": "Lions",
-        "Position": "RB",
-        "Position Rank": 28,
-        "ADP": 86.0
-    },
-    {
-        "Rank": 70,
-        "Name": "Tyler Lockett",
-        "Team": "Seahawks",
-        "Position": "WR",
-        "Position Rank": 29,
-        "ADP": 74.3
-    },
-    {
-        "Rank": 71,
-        "Name": "Mike Williams",
-        "Team": "Chargers",
-        "Position": "WR",
-        "Position Rank": 30,
         "ADP": 63.5
     },
     {
-        "Rank": 72,
-        "Name": "James Cook",
-        "Team": "Bills",
+        "Rank": 61,
+        "Name": "Isiah Pacheco",
+        "Team": "Chiefs",
         "Position": "RB",
-        "Position Rank": 29,
-        "ADP": 82.0
-    },
-    {
-        "Rank": 73,
-        "Name": "Trevor Lawrence",
-        "Team": "Jaguars",
-        "Position": "QB",
-        "Position Rank": 7,
-        "ADP": 59.5
-    },
-    {
-        "Rank": 74,
-        "Name": "Mike Evans",
-        "Team": "Buccaneers",
-        "Position": "WR",
-        "Position Rank": 31,
+        "Position Rank": 28,
         "ADP": 74.5
     },
     {
-        "Rank": 75,
+        "Rank": 62,
+        "Name": "Mike Evans",
+        "Team": "Buccaneers",
+        "Position": "WR",
+        "Position Rank": 26,
+        "ADP": 75.5
+    },
+    {
+        "Rank": 63,
+        "Name": "Terry McLaurin",
+        "Team": "Commanders",
+        "Position": "WR",
+        "Position Rank": 27,
+        "ADP": 50.8
+    },
+    {
+        "Rank": 64,
+        "Name": "Diontae Johnson",
+        "Team": "Steelers",
+        "Position": "WR",
+        "Position Rank": 28,
+        "ADP": 79.3
+    },
+    {
+        "Rank": 65,
+        "Name": "D'Andre Swift",
+        "Team": "Eagles",
+        "Position": "RB",
+        "Position Rank": 29,
+        "ADP": 71.0
+    },
+    {
+        "Rank": 66,
+        "Name": "Michael Pittman Jr.",
+        "Team": "Colts",
+        "Position": "WR",
+        "Position Rank": 29,
+        "ADP": 81.0
+    },
+    {
+        "Rank": 67,
+        "Name": "Tyler Lockett",
+        "Team": "Seahawks",
+        "Position": "WR",
+        "Position Rank": 30,
+        "ADP": 73.3
+    },
+    {
+        "Rank": 68,
+        "Name": "David Montgomery",
+        "Team": "Lions",
+        "Position": "RB",
+        "Position Rank": 30,
+        "ADP": 87.0
+    },
+    {
+        "Rank": 69,
         "Name": "Brandon Aiyuk",
         "Team": "49ers",
         "Position": "WR",
         "Position Rank": 32,
-        "ADP": 75.5
+        "ADP": 73.5
     },
     {
-        "Rank": 76,
+        "Rank": 70,
         "Name": "Christian Kirk",
         "Team": "Jaguars",
         "Position": "WR",
         "Position Rank": 33,
-        "ADP": 75.0
+        "ADP": 75.5
     },
     {
-        "Rank": 77,
+        "Rank": 71,
         "Name": "Justin Herbert",
         "Team": "Chargers",
         "Position": "QB",
         "Position Rank": 8,
-        "ADP": 46.5
+        "ADP": 44.5
     },
     {
-        "Rank": 78,
-        "Name": "Alvin Kamara",
-        "Team": "Saints",
+        "Rank": 72,
+        "Name": "Dalvin Cook",
+        "Team": "Jets",
         "Position": "RB",
-        "Position Rank": 30,
-        "ADP": 61.8
+        "Position Rank": 31,
+        "ADP": 66.0
     },
     {
-        "Rank": 79,
+        "Rank": 73,
         "Name": "Evan Engram",
         "Team": "Jaguars",
         "Position": "TE",
         "Position Rank": 8,
-        "ADP": 79.0
+        "ADP": 77.0
     },
     {
-        "Rank": 80,
+        "Rank": 74,
         "Name": "AJ Dillon",
         "Team": "Packers",
         "Position": "RB",
-        "Position Rank": 31,
-        "ADP": 94.0
+        "Position Rank": 32,
+        "ADP": 93.8
     },
     {
-        "Rank": 81,
+        "Rank": 75,
         "Name": "Brian Robinson Jr.",
         "Team": "Commanders",
         "Position": "RB",
-        "Position Rank": 32,
-        "ADP": 110.3
+        "Position Rank": 33,
+        "ADP": 109.8
     },
     {
-        "Rank": 82,
+        "Rank": 76,
         "Name": "Marquise Brown",
         "Team": "Cardinals",
         "Position": "WR",
         "Position Rank": 34,
-        "ADP": 85.3
+        "ADP": 88.8
     },
     {
-        "Rank": 83,
+        "Rank": 77,
         "Name": "Deshaun Watson",
         "Team": "Browns",
         "Position": "QB",
         "Position Rank": 9,
-        "ADP": 74.8
+        "ADP": 74.3
     },
     {
-        "Rank": 84,
-        "Name": "Dalvin Cook",
-        "Team": "Free Agent",
-        "Position": "RB",
-        "Position Rank": 33,
-        "ADP": 61.5
-    },
-    {
-        "Rank": 85,
+        "Rank": 78,
         "Name": "Jahan Dotson",
         "Team": "Commanders",
         "Position": "WR",
         "Position Rank": 35,
-        "ADP": 95.5
+        "ADP": 95.0
     },
     {
-        "Rank": 86,
+        "Rank": 79,
         "Name": "Antonio Gibson",
         "Team": "Commanders",
         "Position": "RB",
         "Position Rank": 34,
-        "ADP": 113.0
+        "ADP": 112.3
     },
     {
-        "Rank": 87,
+        "Rank": 80,
         "Name": "George Pickens",
         "Team": "Steelers",
         "Position": "WR",
         "Position Rank": 36,
-        "ADP": 88.5
+        "ADP": 84.5
     },
     {
-        "Rank": 88,
+        "Rank": 81,
         "Name": "Rashaad Penny",
         "Team": "Eagles",
         "Position": "RB",
         "Position Rank": 35,
-        "ADP": 131.0
+        "ADP": 135.0
     },
     {
-        "Rank": 89,
+        "Rank": 82,
         "Name": "Treylon Burks",
         "Team": "Titans",
         "Position": "WR",
         "Position Rank": 37,
-        "ADP": 99.3
+        "ADP": 101.8
     },
     {
-        "Rank": 90,
+        "Rank": 83,
         "Name": "Khalil Herbert",
         "Team": "Bears",
         "Position": "RB",
         "Position Rank": 36,
-        "ADP": 110.8
+        "ADP": 101.8
     },
     {
-        "Rank": 91,
-        "Name": "Jamaal Williams",
-        "Team": "Saints",
+        "Rank": 84,
+        "Name": "Samaje Perine",
+        "Team": "Broncos",
         "Position": "RB",
         "Position Rank": 37,
-        "ADP": 100.8
+        "ADP": 116.0
     },
     {
-        "Rank": 92,
+        "Rank": 85,
         "Name": "Dak Prescott",
         "Team": "Cowboys",
         "Position": "QB",
@@ -736,79 +680,79 @@
         "ADP": 87.5
     },
     {
-        "Rank": 93,
+        "Rank": 86,
         "Name": "Pat Freiermuth",
         "Team": "Steelers",
         "Position": "TE",
         "Position Rank": 9,
-        "ADP": 96.0
+        "ADP": 96.3
     },
     {
-        "Rank": 94,
+        "Rank": 87,
         "Name": "David Njoku",
         "Team": "Browns",
         "Position": "TE",
         "Position Rank": 10,
-        "ADP": 86.0
+        "ADP": 85.8
     },
     {
-        "Rank": 95,
+        "Rank": 88,
         "Name": "Courtland Sutton",
         "Team": "Broncos",
         "Position": "WR",
         "Position Rank": 38,
-        "ADP": 108.5
+        "ADP": 108.3
     },
     {
-        "Rank": 96,
+        "Rank": 89,
         "Name": "Dalton Schultz",
         "Team": "Texans",
         "Position": "TE",
         "Position Rank": 11,
-        "ADP": 115.3
+        "ADP": 118.0
     },
     {
-        "Rank": 97,
+        "Rank": 90,
         "Name": "Brandin Cooks",
         "Team": "Cowboys",
         "Position": "WR",
         "Position Rank": 39,
-        "ADP": 96.5
+        "ADP": 96.3
     },
     {
-        "Rank": 98,
+        "Rank": 91,
         "Name": "Tua Tagovailoa",
         "Team": "Dolphins",
         "Position": "QB",
         "Position Rank": 11,
-        "ADP": 92.3
+        "ADP": 92.5
     },
     {
-        "Rank": 99,
+        "Rank": 92,
         "Name": "Jordan Addison",
         "Team": "Vikings",
         "Position": "WR",
         "Position Rank": 40,
-        "ADP": 96.3
+        "ADP": 96.5
     },
     {
-        "Rank": 100,
+        "Rank": 93,
         "Name": "Kirk Cousins",
         "Team": "Vikings",
         "Position": "QB",
         "Position Rank": 12,
-        "ADP": 108.5
+        "ADP": 106.5
     },
     {
-        "Rank": 101,
-        "Name": "Samaje Perine",
-        "Team": "Broncos",
+        "Rank": 94,
+        "Name": "Jamaal Williams",
+        "Team": "Saints",
         "Position": "RB",
         "Position Rank": 38,
-        "ADP": 111.8
+        "ADP": 104.3
     },
     {
-        "Rank": 102,
+        "Rank": 95,
         "Name": "Jaxon Smith-Njigba",
         "Team": "Seahawks",
         "Position": "WR",
@@ -816,39 +760,39 @@
         "ADP": 95.5
     },
     {
-        "Rank": 103,
+        "Rank": 96,
         "Name": "Zach Charbonnet",
         "Team": "Seahawks",
         "Position": "RB",
         "Position Rank": 39,
-        "ADP": 121.0
+        "ADP": 116.8
     },
     {
-        "Rank": 104,
+        "Rank": 97,
         "Name": "Michael Thomas",
         "Team": "Saints",
         "Position": "WR",
         "Position Rank": 42,
-        "ADP": 102.0
+        "ADP": 104.5
     },
     {
-        "Rank": 105,
+        "Rank": 98,
         "Name": "Tyler Higbee",
         "Team": "Rams",
         "Position": "TE",
         "Position Rank": 12,
-        "ADP": 138.0
+        "ADP": 139.8
     },
     {
-        "Rank": 106,
-        "Name": "Daniel Jones",
-        "Team": "Giants",
+        "Rank": 99,
+        "Name": "Aaron Rodgers",
+        "Team": "Jets",
         "Position": "QB",
         "Position Rank": 13,
-        "ADP": 116.5
+        "ADP": 102.8
     },
     {
-        "Rank": 107,
+        "Rank": 100,
         "Name": "JuJu Smith-Schuster",
         "Team": "Patriots",
         "Position": "WR",
@@ -856,271 +800,255 @@
         "ADP": 108.3
     },
     {
-        "Rank": 108,
+        "Rank": 101,
         "Name": "Jeff Wilson Jr.",
         "Team": "Dolphins",
         "Position": "RB",
         "Position Rank": 40,
-        "ADP": 152.3
+        "ADP": 153.8
     },
     {
-        "Rank": 109,
+        "Rank": 102,
         "Name": "Gabe Davis",
         "Team": "Bills",
         "Position": "WR",
         "Position Rank": 44,
-        "ADP": 109.3
+        "ADP": 108.3
     },
     {
-        "Rank": 110,
-        "Name": "Aaron Rodgers",
-        "Team": "Jets",
+        "Rank": 103,
+        "Name": "Daniel Jones",
+        "Team": "Giants",
         "Position": "QB",
         "Position Rank": 14,
-        "ADP": 106.5
+        "ADP": 120.5
     },
     {
-        "Rank": 111,
+        "Rank": 104,
         "Name": "Cole Kmet",
         "Team": "Bears",
         "Position": "TE",
         "Position Rank": 13,
-        "ADP": 126.8
+        "ADP": 125.8
     },
     {
-        "Rank": 112,
+        "Rank": 105,
         "Name": "Greg Dulcich",
         "Team": "Broncos",
         "Position": "TE",
         "Position Rank": 14,
-        "ADP": 144.5
+        "ADP": 163.3
     },
     {
-        "Rank": 113,
+        "Rank": 106,
         "Name": "Jerick McKinnon",
         "Team": "Chiefs",
         "Position": "RB",
         "Position Rank": 41,
-        "ADP": 122.5
+        "ADP": 123.3
     },
     {
-        "Rank": 114,
+        "Rank": 107,
         "Name": "Jakobi Meyers",
         "Team": "Raiders",
         "Position": "WR",
         "Position Rank": 45,
-        "ADP": 143.8
+        "ADP": 150.0
     },
     {
-        "Rank": 115,
+        "Rank": 108,
         "Name": "Kadarius Toney",
         "Team": "Chiefs",
         "Position": "WR",
         "Position Rank": 46,
-        "ADP": 113.8
+        "ADP": 116.5
     },
     {
-        "Rank": 116,
+        "Rank": 109,
         "Name": "Damien Harris",
         "Team": "Bills",
         "Position": "RB",
         "Position Rank": 42,
-        "ADP": 147.0
+        "ADP": 166.3
     },
     {
-        "Rank": 117,
+        "Rank": 110,
         "Name": "Devin Singletary",
         "Team": "Texans",
         "Position": "RB",
         "Position Rank": 43,
-        "ADP": 149.8
+        "ADP": 156.0
     },
     {
-        "Rank": 118,
+        "Rank": 111,
         "Name": "Nico Collins",
         "Team": "Texans",
         "Position": "WR",
         "Position Rank": 47,
-        "ADP": 176.5
+        "ADP": 174.8
     },
     {
-        "Rank": 119,
+        "Rank": 112,
         "Name": "Russell Wilson",
         "Team": "Broncos",
         "Position": "QB",
         "Position Rank": 15,
-        "ADP": 133.5
+        "ADP": 142.3
     },
     {
-        "Rank": 120,
-        "Name": "Kendre Miller",
-        "Team": "Saints",
-        "Position": "RB",
-        "Position Rank": 44,
-        "ADP": 148.5
-    },
-    {
-        "Rank": 121,
+        "Rank": 113,
         "Name": "Elijah Mitchell",
         "Team": "49ers",
         "Position": "RB",
-        "Position Rank": 45,
-        "ADP": 139.8
+        "Position Rank": 44,
+        "ADP": 142.5
     },
     {
-        "Rank": 122,
+        "Rank": 114,
+        "Name": "Tyler Allgeier",
+        "Team": "Falcons",
+        "Position": "RB",
+        "Position Rank": 45,
+        "ADP": 159.5
+    },
+    {
+        "Rank": 115,
         "Name": "Geno Smith",
         "Team": "Seahawks",
         "Position": "QB",
         "Position Rank": 16,
-        "ADP": 117.3
+        "ADP": 121.0
     },
     {
-        "Rank": 123,
+        "Rank": 116,
         "Name": "Chigoziem Okonkwo",
         "Team": "Titans",
         "Position": "TE",
         "Position Rank": 15,
-        "ADP": 145.5
+        "ADP": 147.3
     },
     {
-        "Rank": 124,
+        "Rank": 117,
         "Name": "Quentin Johnston",
         "Team": "Chargers",
         "Position": "WR",
         "Position Rank": 48,
-        "ADP": 121.8
+        "ADP": 121.0
     },
     {
-        "Rank": 125,
-        "Name": "Tyler Allgeier",
-        "Team": "Falcons",
+        "Rank": 118,
+        "Name": "Jaylen Warren",
+        "Team": "Steelers",
         "Position": "RB",
         "Position Rank": 46,
-        "ADP": 156.5
+        "ADP": 174.5
     },
     {
-        "Rank": 126,
+        "Rank": 119,
         "Name": "Rashod Bateman",
         "Team": "Ravens",
         "Position": "WR",
         "Position Rank": 49,
-        "ADP": 154.5
+        "ADP": 155.8
     },
     {
-        "Rank": 127,
+        "Rank": 120,
         "Name": "Rondale Moore",
         "Team": "Cardinals",
         "Position": "WR",
         "Position Rank": 50,
-        "ADP": 169.0
+        "ADP": 179.3
     },
     {
-        "Rank": 128,
-        "Name": "Jared Goff",
-        "Team": "Lions",
-        "Position": "QB",
-        "Position Rank": 17,
-        "ADP": 132.5
-    },
-    {
-        "Rank": 129,
-        "Name": "Gerald Everett",
-        "Team": "Chargers",
-        "Position": "TE",
-        "Position Rank": 16,
-        "ADP": 151.8
-    },
-    {
-        "Rank": 130,
-        "Name": "Jaylen Warren",
-        "Team": "Steelers",
-        "Position": "RB",
-        "Position Rank": 47,
-        "ADP": 184.0
-    },
-    {
-        "Rank": 131,
-        "Name": "D'Onta Foreman",
-        "Team": "Bears",
-        "Position": "RB",
-        "Position Rank": 48,
-        "ADP": 162.3
-    },
-    {
-        "Rank": 132,
+        "Rank": 121,
         "Name": "Anthony Richardson",
         "Team": "Colts",
         "Position": "QB",
-        "Position Rank": 18,
-        "ADP": 118.0
+        "Position Rank": 17,
+        "ADP": 117.8
     },
     {
-        "Rank": 133,
+        "Rank": 122,
+        "Name": "Zach Ertz",
+        "Team": "Cardinals",
+        "Position": "TE",
+        "Position Rank": 16,
+        "ADP": 196.3
+    },
+    {
+        "Rank": 123,
+        "Name": "D'Onta Foreman",
+        "Team": "Bears",
+        "Position": "RB",
+        "Position Rank": 47,
+        "ADP": 163.7
+    },
+    {
+        "Rank": 124,
+        "Name": "Raheem Mostert",
+        "Team": "Dolphins",
+        "Position": "RB",
+        "Position Rank": 48,
+        "ADP": 155.3
+    },
+    {
+        "Rank": 125,
+        "Name": "Jared Goff",
+        "Team": "Lions",
+        "Position": "QB",
+        "Position Rank": 18,
+        "ADP": 137.8
+    },
+    {
+        "Rank": 126,
+        "Name": "Matthew Stafford",
+        "Team": "Rams",
+        "Position": "QB",
+        "Position Rank": 19,
+        "ADP": 170.5
+    },
+    {
+        "Rank": 127,
         "Name": "Dalton Kincaid",
         "Team": "Bills",
         "Position": "TE",
         "Position Rank": 17,
-        "ADP": 130.8
+        "ADP": 127.5
     },
     {
-        "Rank": 134,
-        "Name": "Raheem Mostert",
-        "Team": "Dolphins",
+        "Rank": 128,
+        "Name": "Ezekiel Elliott",
+        "Team": "Patriots",
         "Position": "RB",
         "Position Rank": 49,
-        "ADP": 149.8
+        "ADP": 141.5
     },
     {
-        "Rank": 135,
+        "Rank": 129,
         "Name": "Elijah Moore",
         "Team": "Browns",
         "Position": "WR",
         "Position Rank": 51,
-        "ADP": 151.0
+        "ADP": 149.0
     },
     {
-        "Rank": 136,
+        "Rank": 130,
         "Name": "Darnell Mooney",
         "Team": "Bears",
         "Position": "WR",
         "Position Rank": 52,
-        "ADP": 164.5
+        "ADP": 174.5
     },
     {
-        "Rank": 137,
+        "Rank": 131,
         "Name": "Justin Tucker",
         "Team": "Ravens",
         "Position": "K",
         "Position Rank": 1,
-        "ADP": 102.8
+        "ADP": 96.3
     },
     {
-        "Rank": 138,
-        "Name": "Derek Carr",
-        "Team": "Saints",
-        "Position": "QB",
-        "Position Rank": 20,
-        "ADP": 166.5
-    },
-    {
-        "Rank": 139,
-        "Name": "Mike Gesicki",
-        "Team": "Patriots",
-        "Position": "TE",
-        "Position Rank": 18,
-        "ADP": 190.3
-    },
-    {
-        "Rank": 140,
-        "Name": "Allen Lazard",
-        "Team": "Jets",
-        "Position": "WR",
-        "Position Rank": 53,
-        "ADP": 139.3
-    },
-    {
-        "Rank": 141,
+        "Rank": 132,
         "Name": "De'Von Achane",
         "Team": "Dolphins",
         "Position": "RB",
@@ -1128,457 +1056,473 @@
         "ADP": 134.8
     },
     {
-        "Rank": 142,
-        "Name": "Juwan Johnson",
-        "Team": "Saints",
-        "Position": "TE",
-        "Position Rank": 19,
-        "ADP": 168.5
+        "Rank": 133,
+        "Name": "Kyler Murray",
+        "Team": "Cardinals",
+        "Position": "QB",
+        "Position Rank": 20,
+        "ADP": 190.5
     },
     {
-        "Rank": 143,
+        "Rank": 134,
+        "Name": "Gerald Everett",
+        "Team": "Chargers",
+        "Position": "TE",
+        "Position Rank": 18,
+        "ADP": 160.3
+    },
+    {
+        "Rank": 135,
+        "Name": "Allen Lazard",
+        "Team": "Jets",
+        "Position": "WR",
+        "Position Rank": 53,
+        "ADP": 140.8
+    },
+    {
+        "Rank": 136,
+        "Name": "Jerome Ford",
+        "Team": "Browns",
+        "Position": "RB",
+        "Position Rank": 51,
+        "ADP": 203.5
+    },
+    {
+        "Rank": 137,
+        "Name": "Mike Gesicki",
+        "Team": "Patriots",
+        "Position": "TE",
+        "Position Rank": 19,
+        "ADP": 201.3
+    },
+    {
+        "Rank": 138,
         "Name": "Evan McPherson",
         "Team": "Bengals",
         "Position": "K",
         "Position Rank": 2,
-        "ADP": 139.5
+        "ADP": 131.8
     },
     {
-        "Rank": 144,
+        "Rank": 139,
         "Name": "Irv Smith Jr.",
         "Team": "Bengals",
         "Position": "TE",
         "Position Rank": 20,
-        "ADP": 206.3
+        "ADP": 212.3
     },
     {
-        "Rank": 145,
+        "Rank": 140,
         "Name": "Zay Flowers",
         "Team": "Ravens",
         "Position": "WR",
         "Position Rank": 54,
-        "ADP": 126.0
+        "ADP": 119.0
     },
     {
-        "Rank": 146,
-        "Name": "Trey McBride",
-        "Team": "Cardinals",
+        "Rank": 141,
+        "Name": "Juwan Johnson",
+        "Team": "Saints",
         "Position": "TE",
         "Position Rank": 21,
-        "ADP": 249.5
+        "ADP": 165.3
     },
     {
-        "Rank": 147,
+        "Rank": 142,
         "Name": "49ers D/ST",
         "Team": "49ers",
         "Position": "D/ST",
         "Position Rank": 1
     },
     {
-        "Rank": 148,
+        "Rank": 143,
         "Name": "DJ Chark Jr.",
         "Team": "Panthers",
         "Position": "WR",
         "Position Rank": 55,
-        "ADP": 190.0
+        "ADP": 191.0
     },
     {
-        "Rank": 149,
+        "Rank": 144,
         "Name": "Hayden Hurst",
         "Team": "Panthers",
         "Position": "TE",
         "Position Rank": 22,
-        "ADP": 218.0
+        "ADP": 223.0
     },
     {
-        "Rank": 150,
-        "Name": "Zach Ertz",
-        "Team": "Cardinals",
+        "Rank": 145,
+        "Name": "Dawson Knox",
+        "Team": "Bills",
         "Position": "TE",
         "Position Rank": 23,
-        "ADP": 215.5
+        "ADP": 193.5
     },
     {
-        "Rank": 151,
+        "Rank": 146,
         "Name": "Skyy Moore",
         "Team": "Chiefs",
         "Position": "WR",
         "Position Rank": 56,
-        "ADP": 142.0
+        "ADP": 137.3
     },
     {
-        "Rank": 152,
+        "Rank": 147,
         "Name": "Bills D/ST",
         "Team": "Bills",
         "Position": "D/ST",
         "Position Rank": 2
     },
     {
-        "Rank": 153,
-        "Name": "Jerome Ford",
-        "Team": "Browns",
+        "Rank": 148,
+        "Name": "Kendre Miller",
+        "Team": "Saints",
         "Position": "RB",
-        "Position Rank": 51,
-        "ADP": 175.5
+        "Position Rank": 52,
+        "ADP": 167.0
     },
     {
-        "Rank": 154,
+        "Rank": 149,
         "Name": "Michael Gallup",
         "Team": "Cowboys",
         "Position": "WR",
         "Position Rank": 57,
-        "ADP": 177.5
+        "ADP": 187.8
     },
     {
-        "Rank": 155,
+        "Rank": 150,
         "Name": "Daniel Carlson",
         "Team": "Raiders",
         "Position": "K",
         "Position Rank": 3,
-        "ADP": 120.5
+        "ADP": 115.0
     },
     {
-        "Rank": 156,
+        "Rank": 151,
         "Name": "Jameson Williams",
         "Team": "Lions",
         "Position": "WR",
         "Position Rank": 58,
-        "ADP": 140.5
+        "ADP": 147.3
     },
     {
-        "Rank": 157,
+        "Rank": 152,
         "Name": "Cowboys D/ST",
         "Team": "Cowboys",
         "Position": "D/ST",
         "Position Rank": 3
     },
     {
-        "Rank": 158,
+        "Rank": 153,
         "Name": "Chuba Hubbard",
         "Team": "Panthers",
         "Position": "RB",
-        "Position Rank": 52,
-        "ADP": 206.0
+        "Position Rank": 53,
+        "ADP": 204.3
     },
     {
-        "Rank": 159,
+        "Rank": 154,
         "Name": "Tyler Bass",
         "Team": "Bills",
         "Position": "K",
         "Position Rank": 4,
-        "ADP": 139.0
+        "ADP": 130.5
     },
     {
-        "Rank": 160,
+        "Rank": 155,
         "Name": "Eagles D/ST",
         "Team": "Eagles",
         "Position": "D/ST",
         "Position Rank": 4
     },
     {
-        "Rank": 161,
+        "Rank": 156,
         "Name": "Tyler Boyd",
         "Team": "Bengals",
         "Position": "WR",
         "Position Rank": 59,
-        "ADP": 149.3
+        "ADP": 156.0
     },
     {
-        "Rank": 162,
+        "Rank": 157,
         "Name": "Zay Jones",
         "Team": "Jaguars",
         "Position": "WR",
         "Position Rank": 60,
-        "ADP": 172.3
+        "ADP": 177.0
     },
     {
-        "Rank": 163,
-        "Name": "Kyler Murray",
-        "Team": "Cardinals",
+        "Rank": 158,
+        "Name": "Kenny Pickett",
+        "Team": "Steelers",
         "Position": "QB",
         "Position Rank": 21,
-        "ADP": 179.8
+        "ADP": 173.8
     },
     {
-        "Rank": 164,
+        "Rank": 159,
         "Name": "Tank Bigsby",
         "Team": "Jaguars",
         "Position": "RB",
-        "Position Rank": 53,
-        "ADP": 184.3
+        "Position Rank": 54,
+        "ADP": 176.3
     },
     {
-        "Rank": 165,
+        "Rank": 160,
         "Name": "Harrison Butker",
         "Team": "Chiefs",
         "Position": "K",
         "Position Rank": 5,
-        "ADP": 146.8
+        "ADP": 136.5
     },
     {
-        "Rank": 166,
-        "Name": "Kenny Pickett",
-        "Team": "Steelers",
+        "Rank": 161,
+        "Name": "Derek Carr",
+        "Team": "Saints",
         "Position": "QB",
         "Position Rank": 22,
-        "ADP": 179.8
+        "ADP": 161.0
     },
     {
-        "Rank": 167,
+        "Rank": 162,
         "Name": "Odell Beckham Jr.",
         "Team": "Ravens",
         "Position": "WR",
         "Position Rank": 61,
-        "ADP": 102.5
+        "ADP": 103.0
     },
     {
-        "Rank": 168,
+        "Rank": 163,
         "Name": "Jordan Love",
         "Team": "Packers",
         "Position": "QB",
         "Position Rank": 23,
-        "ADP": 186.8
+        "ADP": 188.5
     },
     {
-        "Rank": 169,
+        "Rank": 164,
         "Name": "Ravens D/ST",
         "Team": "Ravens",
         "Position": "D/ST",
         "Position Rank": 5
     },
     {
-        "Rank": 170,
+        "Rank": 165,
         "Name": "Kenneth Gainwell",
         "Team": "Eagles",
         "Position": "RB",
-        "Position Rank": 54,
-        "ADP": 210.3
+        "Position Rank": 55,
+        "ADP": 191.5
     },
     {
-        "Rank": 171,
+        "Rank": 166,
         "Name": "Jason Sanders",
         "Team": "Dolphins",
         "Position": "K",
         "Position Rank": 6,
-        "ADP": 217.8
+        "ADP": 194.3
     },
     {
-        "Rank": 172,
+        "Rank": 167,
         "Name": "Adam Thielen",
         "Team": "Panthers",
         "Position": "WR",
         "Position Rank": 62,
-        "ADP": 137.5
+        "ADP": 138.5
     },
     {
-        "Rank": 173,
+        "Rank": 168,
         "Name": "Jake Elliott",
         "Team": "Eagles",
         "Position": "K",
         "Position Rank": 7,
-        "ADP": 174.8
+        "ADP": 160.3
     },
     {
-        "Rank": 174,
-        "Name": "Dawson Knox",
-        "Team": "Bills",
+        "Rank": 169,
+        "Name": "Sam LaPorta",
+        "Team": "Lions",
         "Position": "TE",
         "Position Rank": 24,
-        "ADP": 170.0
+        "ADP": 171.8
     },
     {
-        "Rank": 175,
+        "Rank": 170,
         "Name": "Saints D/ST",
         "Team": "Saints",
         "Position": "D/ST",
         "Position Rank": 6
     },
     {
-        "Rank": 176,
+        "Rank": 171,
         "Name": "Cordarrelle Patterson",
         "Team": "Falcons",
         "Position": "RB",
-        "Position Rank": 55,
-        "ADP": 185.8
+        "Position Rank": 56,
+        "ADP": 189.3
     },
     {
-        "Rank": 177,
+        "Rank": 172,
         "Name": "Marquez Valdes-Scantling",
         "Team": "Chiefs",
         "Position": "WR",
         "Position Rank": 63,
-        "ADP": 206.3
+        "ADP": 205.0
     },
     {
-        "Rank": 178,
+        "Rank": 173,
+        "Name": "Trey McBride",
+        "Team": "Cardinals",
+        "Position": "TE",
+        "Position Rank": 25,
+        "ADP": 271.0
+    },
+    {
+        "Rank": 174,
         "Name": "Noah Fant",
         "Team": "Seahawks",
         "Position": "TE",
-        "Position Rank": 25,
-        "ADP": 232.3
-    },
-    {
-        "Rank": 179,
-        "Name": "Jelani Woods",
-        "Team": "Colts",
-        "Position": "TE",
         "Position Rank": 26,
-        "ADP": 267.5
+        "ADP": 250.0
     },
     {
-        "Rank": 180,
+        "Rank": 175,
         "Name": "Gus Edwards",
         "Team": "Ravens",
         "Position": "RB",
-        "Position Rank": 56,
-        "ADP": 217.5
+        "Position Rank": 57,
+        "ADP": 218.3
     },
     {
-        "Rank": 181,
+        "Rank": 176,
         "Name": "Bengals D/ST",
         "Team": "Bengals",
         "Position": "D/ST",
         "Position Rank": 7
     },
     {
-        "Rank": 182,
+        "Rank": 177,
         "Name": "K.J. Osborn",
         "Team": "Vikings",
         "Position": "WR",
         "Position Rank": 64,
-        "ADP": 185.5
+        "ADP": 187.5
     },
     {
-        "Rank": 183,
+        "Rank": 178,
         "Name": "Bryce Young",
         "Team": "Panthers",
         "Position": "QB",
         "Position Rank": 24,
-        "ADP": 164.5
+        "ADP": 177.3
     },
     {
-        "Rank": 184,
+        "Rank": 179,
         "Name": "Michael Carter",
         "Team": "Jets",
         "Position": "RB",
-        "Position Rank": 57,
-        "ADP": 223.3
+        "Position Rank": 58,
+        "ADP": 300.3
     },
     {
-        "Rank": 185,
+        "Rank": 180,
         "Name": "Younghoe Koo",
         "Team": "Falcons",
         "Position": "K",
         "Position Rank": 8,
-        "ADP": 147.3
+        "ADP": 138.8
     },
     {
-        "Rank": 186,
+        "Rank": 181,
         "Name": "Broncos D/ST",
         "Team": "Broncos",
         "Position": "D/ST",
         "Position Rank": 8
     },
     {
-        "Rank": 187,
+        "Rank": 182,
         "Name": "Hunter Renfrow",
         "Team": "Raiders",
         "Position": "WR",
         "Position Rank": 65,
-        "ADP": 217.0
+        "ADP": 219.3
     },
     {
-        "Rank": 188,
+        "Rank": 183,
         "Name": "Graham Gano",
         "Team": "Giants",
         "Position": "K",
         "Position Rank": 9,
-        "ADP": 180.3
+        "ADP": 163.5
     },
     {
-        "Rank": 189,
+        "Rank": 184,
         "Name": "Joshua Kelley",
         "Team": "Chargers",
         "Position": "RB",
-        "Position Rank": 58,
-        "ADP": 227.5
+        "Position Rank": 59,
+        "ADP": 224.5
     },
     {
-        "Rank": 190,
+        "Rank": 185,
         "Name": "C.J. Stroud",
         "Team": "Texans",
         "Position": "QB",
         "Position Rank": 25,
-        "ADP": 189.8
+        "ADP": 204.8
     },
     {
-        "Rank": 191,
+        "Rank": 186,
         "Name": "Jets D/ST",
         "Team": "Jets",
         "Position": "D/ST",
         "Position Rank": 9
     },
     {
-        "Rank": 192,
+        "Rank": 187,
         "Name": "Jason Myers",
         "Team": "Seahawks",
         "Position": "K",
         "Position Rank": 10,
-        "ADP": 140.0
+        "ADP": 136.5
     },
     {
-        "Rank": 193,
+        "Rank": 188,
         "Name": "Curtis Samuel",
         "Team": "Commanders",
         "Position": "WR",
         "Position Rank": 66,
-        "ADP": 232.0
+        "ADP": 234.0
     },
     {
-        "Rank": 194,
-        "Name": "Jimmy Garoppolo",
-        "Team": "Raiders",
-        "Position": "QB",
-        "Position Rank": 26,
-        "ADP": 221.3
-    },
-    {
-        "Rank": 195,
+        "Rank": 189,
         "Name": "Clyde Edwards-Helaire",
         "Team": "Chiefs",
         "Position": "RB",
-        "Position Rank": 59,
-        "ADP": 204.8
+        "Position Rank": 60,
+        "ADP": 197.3
     },
     {
-        "Rank": 196,
+        "Rank": 190,
         "Name": "Robert Woods",
         "Team": "Texans",
         "Position": "WR",
         "Position Rank": 67,
-        "ADP": 266.0
+        "ADP": 267.0
     },
     {
-        "Rank": 197,
+        "Rank": 191,
         "Name": "Dolphins D/ST",
         "Team": "Dolphins",
         "Position": "D/ST",
         "Position Rank": 10
     },
     {
-        "Rank": 198,
+        "Rank": 192,
         "Name": "Kyren Williams",
         "Team": "Rams",
         "Position": "RB",
-        "Position Rank": 60,
-        "ADP": 277.0
-    },
-    {
-        "Rank": 199,
-        "Name": "Chase Claypool",
-        "Team": "Bears",
-        "Position": "WR",
-        "Position Rank": 68,
-        "ADP": 231.8
+        "Position Rank": 61,
+        "ADP": 194.0
     }
 ]
