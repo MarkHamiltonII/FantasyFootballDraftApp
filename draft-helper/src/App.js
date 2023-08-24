@@ -171,7 +171,6 @@ function App() {
     var fuse = new Fuse(ranking, fuseOptions)
     const searchData = fuse.search(name)
     const newFilter = searchData.map(element => element.item)
-    console.log(newFilter)
     setFilteredData(newFilter)
     // const newFilter = ranking.filter(rank => rank.Name.toLowerCase().includes(name.toLowerCase()))
     // setFilteredData(newFilter)
