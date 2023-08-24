@@ -4,6 +4,7 @@ import { FaUserPlus, FaUserMinus } from 'react-icons/fa'
 // import adp from './data/adp.json'
 import field_rank from './data/field_ranks.json'
 import tristan_rank from './data/tristan_ranks.json'
+import fantasy_pros_rank from './data/fantasy-pros.json'
 
 
 function App() {
@@ -61,6 +62,8 @@ function App() {
     if (loadComplete) {
       saveData()
     }
+    setFilterName('')
+    setSortPosition('All')
     // eslint-disable-next-line
   }, [ranking, myRanking, pick, selectedPlayers])
 
@@ -103,6 +106,10 @@ function App() {
       case 'Tristan':
         setRanking(tristan_rank)
         setFilteredData(tristan_rank)
+        break
+      case 'Fantasy Pros':
+        setRanking(fantasy_pros_rank)
+        setFilteredData(fantasy_pros_rank)
         break
       default:
         return
@@ -242,6 +249,7 @@ function App() {
           <select className='w-50' name="selectedRank" defaultValue="Field" onChange={(e) => handleRankingSelect(e)}>
             <option value="Field">Field Yates (ESPN)</option>
             <option value="Tristan">Tristan H. Cockroft (ESPN)</option>
+            <option value="Fantasy Pros">Fantasy Pros</option>
           </select>
         </div> :
           <div className='undo-button container d-flex flex-column justify-content-center align-items-center w-auto'>
