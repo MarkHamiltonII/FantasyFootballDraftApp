@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Fuse from 'fuse.js';
 import { FaUserPlus, FaUserMinus } from 'react-icons/fa'
-// import adp from './data/adp.json'
 import field_rank from './data/field_ranks.json'
 import tristan_rank from './data/tristan_ranks.json'
 import fantasy_pros_rank from './data/fantasy-pros.json'
@@ -17,6 +17,12 @@ function App() {
   const [sortPosition, setSortPosition] = useState('All')
   const [selectedPlayers, setSelectedPlayers] = useState([])
   const [loadComplete, setLoadComplete] = useState(false)
+
+  const fuseOptions = {
+    keys: [
+      "Name"
+    ]
+  }
 
   useEffect(() => {
     loadData()
@@ -34,7 +40,6 @@ function App() {
       const storedMyRanking = await JSON.parse(sessionStorage.getItem("myRanking"))
       const storedSelectedPlayers = await JSON.parse(sessionStorage.getItem("selectedPlayers"))
       if (storedRanking) {
-        console.log(storedRanking[0])
         setRanking(storedRanking)
         setFilteredData(storedRanking)
       }
@@ -50,7 +55,6 @@ function App() {
       if (!storedRanking) {
         setRanking(field_rank)
         setFilteredData(field_rank)
-        console.log('No stored ranking')
       }
       setLoadComplete(true)
     } catch (e) {
@@ -164,8 +168,13 @@ function App() {
       setFilteredData(ranking)
       return
     }
-    const newFilter = ranking.filter(rank => rank.Name.toLowerCase().includes(name.toLowerCase()))
+    var fuse = new Fuse(ranking, fuseOptions)
+    const searchData = fuse.search(name)
+    const newFilter = searchData.map(element => element.item)
+    console.log(newFilter)
     setFilteredData(newFilter)
+    // const newFilter = ranking.filter(rank => rank.Name.toLowerCase().includes(name.toLowerCase()))
+    // setFilteredData(newFilter)
   }
 
   function filterByPosition(pos) {
@@ -174,7 +183,8 @@ function App() {
       setFilteredData(ranking)
       return
     }
-    const newFilter = ranking.filter(rank => rank.Position === pos)
+    const searchData = ranking.filter(rank => rank.Position === pos)
+    const newFilter = searchData.map(item => item.item)
     setFilteredData(newFilter)
   }
 
