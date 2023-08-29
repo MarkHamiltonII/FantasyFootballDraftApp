@@ -183,8 +183,7 @@ function App() {
       return
     }
     const searchData = ranking.filter(rank => rank.Position === pos)
-    const newFilter = searchData.map(item => item.item)
-    setFilteredData(newFilter)
+    setFilteredData(searchData)
   }
 
   async function handleUndo() {
