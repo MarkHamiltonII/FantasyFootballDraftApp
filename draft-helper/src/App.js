@@ -178,6 +178,7 @@ function App() {
 
   function filterByPosition(pos) {
     setFilterName('')
+    console.log(pos)
     if (pos === 'All') {
       setFilteredData(ranking)
       return
