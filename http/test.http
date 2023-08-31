@@ -1,0 +1,1 @@
+GET https://api.scryfall.com/cards/search?q=set%3Awoe HTTP/1.1
