@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/FantasyFootballDraftApp/static/css/main.a90df1cc.css",
-    "main.js": "/FantasyFootballDraftApp/static/js/main.10f040e7.js",
+    "main.js": "/FantasyFootballDraftApp/static/js/main.2e2ee3b8.js",
     "index.html": "/FantasyFootballDraftApp/index.html",
     "main.a90df1cc.css.map": "/FantasyFootballDraftApp/static/css/main.a90df1cc.css.map",
-    "main.10f040e7.js.map": "/FantasyFootballDraftApp/static/js/main.10f040e7.js.map"
+    "main.2e2ee3b8.js.map": "/FantasyFootballDraftApp/static/js/main.2e2ee3b8.js.map"
   },
   "entrypoints": [
     "static/css/main.a90df1cc.css",
-    "static/js/main.10f040e7.js"
+    "static/js/main.2e2ee3b8.js"
   ]
 }
