@@ -4,6 +4,7 @@ import Fuse from 'fuse.js';
 import { FaUserPlus, FaUserMinus } from 'react-icons/fa'
 import field_rank from './data/field_ranks.json'
 import tristan_rank from './data/tristan_ranks.json'
+import clay_rank from './data/clay_ranks.json'
 import fantasy_pros_rank from './data/fantasy-pros.json'
 
 
@@ -110,6 +111,10 @@ function App() {
       case 'Tristan':
         setRanking(tristan_rank)
         setFilteredData(tristan_rank)
+        break
+      case 'Clay':
+        setRanking(clay_rank)
+        setFilteredData(clay_rank)
         break
       case 'Fantasy Pros':
         setRanking(fantasy_pros_rank)
@@ -258,6 +263,7 @@ function App() {
           <select className='w-50' name="selectedRank" defaultValue="Field" onChange={(e) => handleRankingSelect(e)}>
             <option value="Field">Field Yates (ESPN)</option>
             <option value="Tristan">Tristan H. Cockroft (ESPN)</option>
+            <option value="Clay">Mike Clay (ESPN)</option>
             <option value="Fantasy Pros">Fantasy Pros</option>
           </select>
         </div> :
