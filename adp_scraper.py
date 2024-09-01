@@ -47,7 +47,6 @@ for idx, player in enumerate(players):
     while html[current_index] != '<':
         adp += html[current_index]
         current_index+=1
-    print(name, adp)
     player_data = {
         "Rank": idx+1,
         "Name": name,

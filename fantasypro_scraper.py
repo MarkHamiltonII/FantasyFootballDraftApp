@@ -27,7 +27,7 @@ for p in players:
     player['Rank'] = p['rank_ecr']
     player['Name'] = p['player_name']
     player['Team'] = p['player_team_id']
-    player['Position'] = p['player_yahoo_positions']
+    player['Position'] = p['player_positions']
     player['Position Rank'] = int(re.findall('[0-9]+',p['pos_rank'])[0])
     player_ranks.append(player)
 
