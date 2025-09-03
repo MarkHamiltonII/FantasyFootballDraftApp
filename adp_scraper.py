@@ -40,13 +40,14 @@ for idx, player in enumerate(players):
     pos_rank = re.findall('[0-9]+', rank)[0]
     pos = re.findall('[A-Z]+', rank)[0]
 
-    for _ in range(6):
+    for _ in range(7):
         start = html.find("<td>",start)+4
     current_index = start
     adp = ''
     while html[current_index] != '<':
         adp += html[current_index]
         current_index+=1
+    print("ADP:", adp)
     player_data = {
         "Rank": idx+1,
         "Name": name,
