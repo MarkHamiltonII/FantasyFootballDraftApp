@@ -103,26 +103,44 @@ function App() {
 
   function handleRankingSelect(e) {
     e.preventDefault()
+    let chosen_ranking
     switch (e.target.value) {
       case 'Field':
-        setRanking(field_rank)
-        setFilteredData(field_rank)
+        chosen_ranking = field_rank
+        // setRanking(field_rank)
+        // setFilteredData(field_rank)
         break
-      case 'Tristan':
-        setRanking(tristan_rank)
-        setFilteredData(tristan_rank)
+        case 'Tristan':
+        chosen_ranking = tristan_rank
+        // setRanking(tristan_rank)
+        // setFilteredData(tristan_rank)
         break
-      case 'Clay':
-        setRanking(clay_rank)
-        setFilteredData(clay_rank)
+        case 'Clay':
+        chosen_ranking = clay_rank
+        // setRanking(clay_rank)
+        // setFilteredData(clay_rank)
         break
-      case 'Fantasy Pros':
-        setRanking(fantasy_pros_rank)
-        setFilteredData(fantasy_pros_rank)
+        case 'Fantasy Pros':
+        chosen_ranking = fantasy_pros_rank
+        // setRanking(fantasy_pros_rank)
+        // setFilteredData(fantasy_pros_rank)
         break
       default:
         return
     }
+    let new_ranking = [...chosen_ranking]
+    if (myRanking.length) {
+      myRanking.forEach(myRank => {
+        new_ranking = new_ranking.filter(rank => rank.Name !== myRank.Name)
+      })
+    }
+    if (selectedPlayers.length) {
+      selectedPlayers.forEach(player => {
+        new_ranking = new_ranking.filter(rank => rank.Name !== player.Name)
+      })
+    }
+    setRanking(new_ranking)
+    setFilteredData(new_ranking)
   }
 
   async function handleRemovePlayer(player) {
@@ -256,7 +274,7 @@ function App() {
             </select>
           </div>
         </div>
-        {pick < 2 ? <div className='rank-selection container d-flex flex-column justify-content-center align-items-center w-auto'>
+        <div className='rank-selection container d-flex flex-column justify-content-center align-items-center w-auto'>
           <label className='font-weight-bold'>
             Who's ranking would you like to use?
           </label>
@@ -266,10 +284,10 @@ function App() {
             <option value="Clay">Mike Clay (ESPN)</option>
             <option value="Fantasy Pros">Fantasy Pros</option>
           </select>
-        </div> :
-          <div className='undo-button container d-flex flex-column justify-content-center align-items-center w-auto'>
-            <button className='btn btn-dark' onClick={() => handleUndo()}>Undo</button>
-          </div>}
+        </div>
+        {pick > 1 && <div className='undo-button container d-flex flex-column justify-content-center align-items-center w-auto'>
+          <button className='btn btn-dark' onClick={() => handleUndo()}>Undo</button>
+        </div>}
       </div>
       <div className='d-flex w-100 content-box pt-4 mb-0'>
         {filteredData && <div className='table-container container'>
